@@ -1,0 +1,621 @@
+@charset "UTF-8";
+/**
+ * @author Michel Kingma-Lord <0801342@csfoy.ca>
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Grille
+ * Accessibilité
+ * Interactivité
+ * Mise en page
+ *** règles générales
+ *** entête
+ **** navigation
+ *** main
+ *** formulaire
+ *** interactivité
+ *** footer
+ */
+/* Grille
+   ========================================================================== */
+/*@import url(grille.css);*/
+
+/* Normalize
+   ========================================================================== */
+@import url(normalize.css);
+
+/* Utilitaires
+   ========================================================================== */
+@import url(utilitaires.css);
+
+/* Charte typographique
+   ========================================================================== */
+@import url(typo.css);
+
+/* ACCESSIBILITÉ
+   ========================================================================== */
+
+/* INTERACTIVITÉ GÉNÉRALE
+   ========================================================================== */
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: var(--couleur-police-titre);
+}
+
+a:hover,
+a:active {
+    color: var(--couleur-police-titre);
+}
+
+.liens {
+    list-style-type: none;
+}
+
+.lien:link,
+.lien:visited {
+    color: var(--couleur-principale);
+    text-decoration: underline;
+}
+
+.lien:hover,
+.lien:active {
+    color: var(--couleur-decorations-externe);
+}
+
+/* MISE EN PAGE
+   ========================================================================== */
+
+/* Règles générales */
+
+
+/* Arrière-plan */
+.body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #D2CDC9;
+    background-image: url(../images/general/brickwall.png);
+    background-blend-mode: difference;
+}
+
+
+/***************************
+Entête
+***************************/
+
+
+/* Logo
+***************************/
+.header__picture {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Navigation 
+***************************/
+
+.nav__liste {
+    display: grid;
+    gap: 10px;
+    padding: 0 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 100%;
+    list-style-type: none;
+    font-family: var(--fonteNav);
+    text-align: center;
+    background: var(--couleur-decorations-interne);
+    border: 2px solid var(--couleur-decorations-externe);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+    grid-template-areas:
+        "A"
+        "B"
+        "C"
+        "D"
+}
+
+.nav__itemAccueil {
+    grid-area: A;
+    border-bottom: 2px solid var(--couleur-decorations-externe);
+}
+
+.nav__itemCarte {
+    grid-area: B;
+    border-bottom: 2px solid var(--couleur-decorations-externe);
+}
+
+.nav__itemEnquete {
+    grid-area: C;
+    border-bottom: 2px solid var(--couleur-decorations-externe);
+}
+
+.nav__itemContact {
+    grid-area: D;
+}
+
+@media (min-width: 801px) {
+    .nav__liste {
+        gap: 1.5fr;
+        padding: 0 1rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        max-width: 100%;
+        list-style-type: none;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 2fr);
+        grid-template-areas:
+            ". . . . . . . . . . . . "
+            "A A . B B . C C . D D . "
+            ". . . . . . . . . . . . "
+    }
+
+    .nav__itemAccueil {
+        border-bottom: none;
+    }
+
+    .nav__itemCarte {
+        border-bottom: none;
+    }
+
+    .nav__itemEnquete {
+        border-bottom: none;
+    }
+
+    .nav__itemContact {
+        border-bottom: none;
+    }
+}
+
+
+/**************************
+Main
+*************************/
+.main {
+    margin: auto;
+    /* padding: 2rem; */
+    color: var(--couleur-principale);
+}
+
+.h1 {
+    margin: 0.67em 0;
+    text-align: center;
+    color: var(--couleur-police-titre);
+}
+
+.main__picture {
+    display: block;
+    height: 10em;
+    background: #26408B;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+    background: var(--couleur-decorations-interne);
+    border: 2px solid var(--couleur-decorations-externe);
+}
+
+.btn {
+    background: var(--couleur-decorations-interne);
+    color: var(--couleur-police-titre);
+    border: 2px solid var(--couleur-decorations-externe);
+    /*background-color: #F9EC9320;
+    color: var(--jaune);
+    border: 3px solid var(--jaune);*/
+    padding: 10px;
+    width: 275px;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: var(--fonteBouton);
+    font-size: 3rem;
+}
+
+@media (min-width: 600px) {
+    .main__section1 {
+        display: grid;
+        gap: 1.5fr;
+        padding: 0 1rem;
+        max-width: 100%;
+        list-style-type: none;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 2fr);
+        grid-template-areas:
+            ". . . . . . D D D D D D"
+            "A A A A A . D D D D D D"
+            "A A A A A . D D D D D D"
+            "A A A A A . . . . . . ."
+    }
+
+    .main__picture {
+        grid-area: D;
+        display: block;
+        text-align: center;
+        align-items: center;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .main__p {
+        grid-area: A;
+    }
+
+    .main__section2 {
+        display: grid;
+        gap: 1.5fr;
+        padding: 0 1rem;
+        max-width: 100%;
+        list-style-type: none;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 2fr);
+        grid-template-areas:
+            ". . . . B B B B B B B B"
+            ". C C . B B B B B B B B"
+            ". . . . B B B B B B B B"
+    }
+
+    .main__p2 {
+        grid-area: B;
+    }
+
+    .btn {
+        grid-area: C;
+        max-height: 100%;
+    }
+}
+
+.video_introduction-small {
+    display: flex;
+    align-content: center;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+
+/**************************
+Fiche personnage
+*************************/
+/*
+Styles généraux *****************/
+.main_titre,
+.main_sect1,
+.main_sect2,
+.complementary {
+    padding: 1.5rem;
+}
+
+/*
+Titre et sous-titre****************/
+
+
+/*
+Contenu Section 1****************/
+.sect1--A {
+    display: grid;
+    gap: 1.5fr;
+    padding: 0 2rem;
+    max-width: 100%;
+    list-style-type: none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "E"
+        "F"
+}
+
+.personnage_wrapper {
+    grid-area: E;
+    display: flex;
+    justify-content: center;
+}
+
+.notes_biographiques {
+    grid-area: F;
+}
+
+#titre_image {
+    display: block;
+}
+
+@media (min-width: 800px) {
+    .sect1--A {
+        display: grid;
+        gap: 1.5fr;
+        padding: 0 2rem;
+        max-width: 100%;
+        list-style-type: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "E F"
+
+    }
+
+    .personnage_wrapper {
+        grid-area: E;
+        display: flex;
+        justify-content: center;
+    }
+
+    .notes_biographiques {
+        grid-area: F;
+        padding: 2rem;
+    }
+}
+
+.sect1--B {
+    display: grid;
+    gap: 1.5fr;
+    padding: 0 2rem;
+    max-width: 100%;
+    list-style-type: none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "G"
+        "H"
+}
+
+.localisation_coordonnees {
+    grid-area: G;
+
+}
+
+.localisation_img {
+    grid-area: H;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width: 800px) {
+    .sect1--B {
+        display: grid;
+        gap: 1.5fr;
+        padding: 0 2rem;
+        max-width: 100%;
+        list-style-type: none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "G H"
+
+    }
+
+    .localisation_coordonnees {
+        grid-area: G;
+    }
+
+    .localisation_img {
+        grid-area: H;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*
+Contenu Section 2****************/
+.sect2--A {
+    display: grid;
+    gap: 1.5fr;
+    /*padding: 0 2rem;*/
+    max-width: 100%;
+    list-style-type: none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "I"
+        "J"
+}
+
+.plaque {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.audio_console {
+    padding: 1rem
+}
+
+.sect-epigraphe {
+    grid-area: I;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.sect-capSonore {
+    grid-area: J;
+    padding-right: 2rem;
+}
+
+@media (min-width: 600px) {
+    .sect2--A {
+        display: grid;
+        gap: 1.5fr;
+        /*padding: 0 1rem;*/
+        max-width: 100%;
+        list-style-type: none;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            "I I I I I I J J J J J J"
+    }
+
+    .sect-epigraphe {
+        grid-area: I;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .sect-capSonore {
+        grid-area: J;
+    }
+}
+
+#transcript {
+    display: block;
+}
+
+
+/*
+Zone Enquête ************/
+.enquete {
+    background: var(--couleur-decorations-interne);
+    border: 2px solid var(--couleur-decorations-externe);
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+}
+
+/*******************************************
+BORDURES DÉCORATIVES
+*********************************************/
+
+/*
+Bordure décorative, éléments généraux
+****************/
+.decoration,
+.decoration2,
+.sect1--B,
+.notes_biographiques,
+.sect-epigraphe {
+    /*    border: 2px solid var(--couleur-decorations-externe);
+    border-image: linera-gradient(45deg, transparent, var(--couleur-decorations-externe)); */
+    position: relative;
+}
+
+
+/* BORDURE DÉCORATIVE EN HAUT DROITE */
+.decoration:after {
+    content: "";
+    border-right: 2px solid var(--couleur-decorations-externe);
+    border-top: 2px solid var(--couleur-decorations-externe);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(50% - 10rem);
+    width: 200px;
+}
+
+/* BORDURE DÉCORATIVE EN BAS GAUCHE */
+.sect1--B:after {
+    content: "";
+    border-left: 2px solid var(--couleur-decorations-externe);
+    border-bottom: 2px solid var(--couleur-decorations-externe);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: calc(100% - 5rem);
+    width: 200px;
+}
+
+/* BORDURE DÉCORATIVE EN HAUT GAUCHE */
+.sect-epigraphe:after {
+    content: "";
+    border-left: 2px solid var(--couleur-decorations-externe);
+    border-top: 2px solid var(--couleur-decorations-externe);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(50% - 5rem);
+    width: 200px;
+}
+
+/* BORDURE DÉCORATIVE EN BAS DROITE */
+
+.decoration2:after {
+    content: "";
+    border-right: 2px solid var(--couleur-decorations-externe);
+    border-bottom: 2px solid var(--couleur-decorations-externe);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: calc(50% - 10rem);
+    width: 200px;
+}
+
+
+@media (min-width: 801px) {
+    .localisation {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+.audio_console {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .audio_console {
+        display: block;
+        max-width: 500px;
+    }
+}
+
+.audio_transcription {
+    height: 6em;
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    .audio_transcription {
+        height: 4em;
+    }
+}
+
+/**************************
+Formulaire
+*************************/
+
+/**************************
+footer
+*************************/
+
+.footer {
+    color: var(--couleur-principale);
+}
+
+.footer_paragraphe {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer_remerciement {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/*
+.nav_nav {}
+
+.nav__liste {}
+
+.nav__item {}
+
+.nav__lien {}
+
+
+
+.footer_p {}
+
+.footer_medias {}
+
+.h4 {}
+
+.nav_medias {}
+
+
+
+.copyright {} */

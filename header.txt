@@ -1,0 +1,32 @@
+<!-- DÉBUT navigation commune à inclure dans toutes les pages -->
+    <div class="header">
+        <header class="header__section" role="banner">
+            <h1 class="screen-reader-only focusable">Mystère sur Québec</h1>
+            <a href="../accueil/index.html">
+                <picture>
+                <source srcset="../images/general/entete/entete_mobile.svg" media="(max-width:500px)">
+                <source srcset="../images/general/entete/entete_tablette.svg" media="(max-width:800px)">
+                <source srcset="../images/general/entete/entete_table.svg" media="(min-width:801px)">
+                <img src="../images/general/entete/entete_table.svg" alt="Logo de Mystère sur Québec">
+            </picture>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav__liste">
+                    <li class="nav__itemAccueil">
+                        <a class="nav__lien" href="../accueil/">Accueil</a>
+                    </li>
+                    <li class="nav__itemCarte">
+                        <a class="nav__lien" href="../carte/">Carte</a>
+                    </li>
+                    <li class="nav__itemEnquete">
+                        <a class="nav__lien" href="../enquete/">Enquête</a>
+                    </li>
+                    <li class="nav__itemContact">
+                        <a class="nav__lien" href="../contact/">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- FIN navigation commune à inclure dans toutes les pages -->

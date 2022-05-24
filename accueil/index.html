@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mystère sur Québec est un jeu-enquête imaginé par Énigma, firme spécialisée. Les données proviennent des épigraphes historiques de la Ville de Québec. Il est réalisé par X, Y et Z, étudiants en première année du programme Techniques d’intégration multimédia.">
+    <meta name="keywords"
+        content="Énigma, jeu-enquête, épigraphes, données ouvertes, Mystère sur Québec, personnages historiques" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="author" content="Michel Kingma-Lord">
+    <title>Mystère sur Québec</title>
+    <link href="../css/mandatAAccueil.css" type="text/css" rel="stylesheet">
+    <!-- <link href="../css/mandatBCarte.css" type="text/css" rel="stylesheet"> -->
+    <link href="../css/mandatCEnquete.css" type="text/css" rel="stylesheet">
+    <link href="../css/mandatDConcours.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="body">
+    <a href="#contenu" class="screen-reader-only focusable"> Allez au contenu</a>
+    <!-- DÉBUT navigation commune à inclure dans toutes les pages -->
+    <a href="#contenu" class="screen-reader-only focusable">Allez au contenu</a>
+    <header class="header__section" role="banner">
+        <h1 class="screen-reader-only focusable">Mystère sur Québec</h1>
+        <a href="../accueil/index.html">
+            <picture>
+                <source srcset="../images/general/entete/entete_mobile.svg" media="(max-width:500px)">
+                <source srcset="../images/general/entete/entete_tablette.svg" media="(max-width:600px)">
+                <source srcset="../images/general/entete/entete_table.svg" media="(min-width:601px)">
+                <img class="header__picture" src="../images/general/entete/entete_table.svg"
+                    alt="Logo de Mystère sur Québec">
+            </picture>
+        </a>
+        <nav class="nav">
+            <ul class="nav__liste">
+                <li class="nav__itemAccueil">
+                    <a class="nav__lien" href="../accueil/">Accueil</a>
+                </li>
+                <li class="nav__itemCarte">
+                    <a class="nav__lien" href="../carte/">Carte</a>
+                </li>
+                <li class="nav__itemEnquete">
+                    <a class="nav__lien" href="../enquete/">Enquête</a>
+                </li>
+                <li class="nav__itemContact">
+                    <a class="nav__lien" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main" role="main">
+        <div class="conteneur ">
+            <h1 id="contenu" class="focusable h1">Accueil</h1>
+
+            <div class="main__section1">
+                <div class="main__picture">
+                    <video class="video_introduction-small" controls>
+                        <source id="video_introduction-small" src="/video/Mystère sur Québec_1.mp4"
+                            alt="Video sur Mystère sur Québec">
+                        Votre navigateur ne permet pas de lire la vidéo, mais vous pouvez toujours la <a
+                            href="">télécharger</a>.
+                    </video>
+                </div>
+                <p class="main__p">Très appréciées des citoyens et des visiteurs, les 135 plaques Ici vécut présentes
+                    sur le territoire de la ville de Québec permettent de rappeler de belle façon le souvenir de
+                    personnes qui, chacune à leur manière, ont marqué autant la petite que la grande histoire de Québec.
+                    <br> Parmi ces 135 plaques, 12 ont été sélectionnées pour leur intérêt historique ou anecdotique.
+                </p>
+            </div>
+            <div class="main__section2">
+                <p class="main__p2">De manière ludique, découvrez les lieux où des hommes et des femmes ont chacun à
+                    leur manière marqué la vie des gens de la ville de Québec. Parcourez les fiches des personnages et
+                    découvrez ou redécouvrez leur histoire, écoutez les témoignages des gens qui les ont côtoyés et
+                    constatez comment chacun a marqué notre histoire. Participez à une enquête et courez la chance de
+                    gagner un repas pour deux à l’Auberge des Illustres voisins. Parcourez les fiches à la recherche des
+                    pièces à conviction qui vous permettront de résoudre l’enquête. À vous de jouer !
+                </p>
+                <button class="btn"><a href="../enquete/">Résoudre l'enquête</a></button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav class="nav_nav">
+            <ul class="nav__liste">
+                <li class="nav__itemAccueil">
+                    <a class="nav__lien" href="../accueil/index.html">Accueil</a>
+                </li>
+                <li class="nav__itemCarte">
+                    <a class="nav__lien" href="../carte/">Carte</a>
+                </li>
+                <li class="nav__itemEnquete">
+                    <a class="nav__lien" href="../enquete/">Enquête</a>
+                </li>
+                <li class="nav__itemContact">
+                    <a class="nav__lien" href="../contact/">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="footer_paragraphe">
+            <div class="footer_grid">
+                <picture class="footer_medias">
+                    <img src="/images/footer/carte.png" alt="Carte de l'Adresse indiqué">
+                </picture>
+                <p class="footer_p">Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec.<br />
+                    418-654-9823</p>
+            </div>
+            <p class="nous_joindre">Nous joindre</p>
+            <nav class="nav_medias">
+                <ul class="item_sociaux_ul">
+                    <li class="item_sociaux">
+                        <a class="lien_sociaux facebook" href="facebook/"></a>
+                    </li>
+                    <li class="item_sociaux">
+                        <a class="lien_sociaux twitter" href="twitter/"></a>
+                    </li>
+                    <li class="item_sociaux">
+                        <a class="lien_sociaux youtube" href="youtube/"></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <p class="footer_remerciement">Merci à l’équipe des données ouvertes de la Ville de Québec qui a
+                rendu
+                disponibles le jeu de données « Épigraphes historiques »
+                sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et
+                servir
+                de prétexte au « Mystère sur Québec ».
+    </footer>
+
+
+    <p class="copyright">Une réalisation de Clodiane Charette, Maxime Graignon, Michel Kingma-Lord et
+        Benjamin
+        Brouillette. © Tous droits réservés. Travail scolaire réalisé en mars 2022.
+        Programme Techniques d’intégration multimédia.</p>
+    </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+@charset "UTF-8";
+/**
+ * @author Benjamin Brouillette <>
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Navigation
+ * Carte
+ * Titres
+ * Conteneur
+ * Images
+ * Footer
+ */
+
+/* Normalize
+
+   ========================================================================== */
+
+@import url(normalize.css);
+
+/* Grille
+
+   ========================================================================== */
+
+/*@import url(grille.css);*/
+
+/* Utilitaires
+
+   ========================================================================== */
+
+@import url(utilitaires.css);
+
+/* Charte typographique
+
+   ========================================================================== */
+
+@import url(typo.css);
+
+
+* {
+    color: #F9EC93;
+}
+
+.footer, .header {
+    color: #F9EC93;
+}
+
+/* Navigation
+***************************/
+
+.nav__liste {
+    display: grid;
+    gap: 10px;
+    padding: 0 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 100%;
+    list-style-type: none;
+    font-family: var(--fonteNav);
+    text-align: center;
+    background: var(--couleur-decorations-interne);
+    border: 2px solid var(--couleur-decorations-externe);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+    grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "D"
+}
+
+.nav__itemAccueil {
+    grid-area: A;
+    border-bottom: 2px solid var(--couleur-decorations-externe);
+}
+
+.nav__itemCarte {
+    grid-area: B;
+    border-bottom: 2px solid var(--couleur-decorations-externe);
+}
+
+.nav__itemEnquete {
+    grid-area: C;
+    border-bottom: 2px solid var(--couleur-decorations-externe);
+}
+
+.nav__itemContact {
+    grid-area: D;
+}
+
+@media (min-width: 801px) {
+    .nav__liste {
+        gap: 1.5fr;
+        padding: 0 1rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        max-width: 100%;
+        list-style-type: none;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 2fr);
+        grid-template-areas:
+         ". . . . . . . . . . . . "
+         "A A . B B . C C . D D . "
+         ". . . . . . . . . . . . "
+    }
+
+    .nav__itemAccueil {
+        border-bottom: none;
+    }
+
+    .nav__itemCarte {
+        border-bottom: none;
+    }
+
+    .nav__itemEnquete {
+        border-bottom: none;
+    }
+
+    .nav__itemContact {
+        border-bottom: none;
+    }
+}
+
+/* CARTE */
+
+#carte {
+    min-height: 300px;
+}
+
+@media (min-width: 600px) {
+    #carte {
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 800px) {
+    #carte {
+        min-height: 500px;
+    }
+}
+
+body {
+    background-color: #D2CDC9;
+    background-image: url(../images/general/brickwall.png);
+    background-blend-mode: difference;
+}
+
+.texte_image_carte {
+    color: black;
+}
+
+/* TITRES */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* CONTENEUR */
+
+.conteneur {
+    margin: 0 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+
+@media (min-width: 600px) {
+    .conteneur {
+        margin: 0 1em 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1em;
+    }
+}
+
+@media (min-width: 800px) {
+    .conteneur {
+        margin: 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1em;
+    }
+}
+
+/* IMAGES */
+
+.img {
+    border: .3em solid white;
+}
+
+@media (min-width: 600px) {
+    .img {
+        border: .5em solid white;
+    }
+}
+
+a.lien_fiche_perso {
+    position: relative;
+    background: white;
+    text-align: center;
+    /*border-bottom: 1em solid white;*/
+    /*padding: 0 20px 0;*/
+    /*padding-bottom: .5em;*/
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 600px) {
+    a.lien_fiche_perso {
+        position: relative;
+        background: white;
+        text-align: center;
+        /*border-bottom: 1em solid white;*/
+        /*padding: 0 20px 0;*/
+        padding-bottom: .7em;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (min-width: 800px) {
+    a.lien_fiche_perso {
+        position: relative;
+        background: white;
+        text-align: center;
+        padding-bottom: 1em;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+/* FOOTER */
+
+.footer_paragraphe {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer {
+    color: #FFFFFF;
+    margin-top: 1em;
+}
+
+.footer_p {
+    text-align: center;
+}
+
+@media (min-width: 801px) {
+    .footer_grid {
+        display: grid;
+        max-width: 100%;
+        gap: 15px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            "A A A A A A . . . . . ."
+            "A A A A A A B B B B B B"
+            "A A A A A A . . . . . .";
+    }
+
+    .footer_medias {
+        grid-area: A;
+    }
+
+    .footer_p {
+        grid-area: B;
+    }
+}
+
+.footer_img {
+    padding-top: 25px;
+}
+
+@media (min-width: 800px) {
+    .footer_img {
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 600px) {
+    .footer_grid {
+        display: grid;
+        max-width: 100%;
+        gap: 15px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            "A A A A A A . . . . . ."
+            "A A A A A A B B B B B B"
+            "A A A A A A . . . . . .";
+    }
+
+    .footer_medias {
+        grid-area: A;
+    }
+
+    .footer_p {
+        grid-area: B;
+    }
+}
+
+.footer_remerciement {
+    padding: 0%;
+}
+
+.nav__liste {
+    padding: 0;
+}
+
+.nav__item {
+    border-bottom: 3px solid #F9EC93;
+}
+
+.nav__item:last-child {
+    border-bottom: none;
+}
+
+.item_sociaux_ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.item_sociaux {
+    margin: 6px;
+    text-align: center;
+}
+
+@media (min-width: 801px) {
+    .item_sociaux_ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    .item_sociaux_ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    .footer_medias {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.nous_joindre {
+    text-align: center;
+    padding-top: 25px;
+    font-family: var(--fonteParagraphe);
+}
+
+@media (min-width: 801px) {
+    .nous_joindre {
+        text-align: center;
+        padding-top: 25px;
+        font-family: var(--fonteParagraphe);
+    }
+}
+
+.copyright {
+    color: #FFFFFF;
+    width: 100%;
+}

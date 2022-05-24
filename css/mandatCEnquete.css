@@ -1,0 +1,267 @@
+@charset "UTF-8";
+/**
+ * @author Clodiane Charette <2164515@csfoy.ca>
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ *** style des bouttons
+ *** sprite CSS footer
+ *** aspect général
+ *** couleur typo
+ *** style formulaire fiche perso
+ */
+
+/* Normalize
+   ========================================================================== */
+@import url(normalize.css);
+
+/* Utilitaires
+   ========================================================================== */
+@import url(utilitaires.css);
+
+/* Charte typographique
+   ========================================================================== */
+@import url(typo.css);
+
+
+/*** style des bouttons
+   ========================================================================== */
+.btn.cache {
+    display: none;
+}
+
+.btn {
+    background-color: var(--couleur-decorations-interne);
+    color: var(--couleur-police-titre);
+    border: 3px solid var(--couleur-decorations-externe);
+    padding: 10px;
+    width: 275px;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: var(--fonteBouton);
+    font-size: 3rem;
+}
+
+.btn:disabled {
+    background-color: var(--bleu_pale_transparent);
+    color: var(--bleu_pale);
+    border: 3px solid var(--bleu_pale);
+    padding: 10px;
+    max-width: 275px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    font-family: var(--fonteBouton);
+    font-size: 3rem;
+}
+
+.boutons {
+    margin: auto;
+    width: 275px;
+}
+
+@media (min-width: 600px) {
+    .btn {
+        padding: 5px;
+        width: 180px;
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+        margin-left: 10px;
+        font-size: 2rem;
+    }
+
+    .btn:disabled {
+        background-color: var(--bleu_pale_transparent);
+        color: var(--bleu_pale);
+        border: 3px solid var(--bleu_pale);
+        padding: 5px;
+        font-size: 2rem;
+    }
+
+    .boutons {
+        margin: 30px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/*** sprite CSS footer
+   ========================================================================== */
+.item_sociaux {
+    list-style: none;
+}
+
+.lien_sociaux {
+    background-image: url(../images/general/footer/iconeSprite.png);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.youtube {
+    background-position: 0px 0px;
+}
+
+.twitter {
+    background-position: 50px 0px;
+}
+
+.facebook {
+    background-position: 100px 0px;
+}
+
+.twitter:hover,
+.twitter:active {
+    background-position: 50px 50px;
+}
+
+.youtube:hover,
+.youtube:active {
+    background-position: 0px 50px;
+}
+
+.facebook:hover,
+.facebook:active {
+    background-position: 100px 50px;
+}
+
+
+/*** aspect général 
+   ========================================================================== */
+footer {
+    padding-top: 4rem;
+}
+
+body {
+    background-color: #D2CDC9;
+    background-image: url(../images/general/brickwall.png);
+    background-blend-mode: difference;
+}
+
+.contenu {
+    background-color: #26354650;
+    border: 3px solid var(--jaune);
+    margin: 0 10px;
+}
+
+.contenu_personnage,
+.contenu_objet,
+.contenu_lieu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+@media (min-width: 600px) {
+    .contenu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenu_personnage,
+    .contenu_objet,
+    .contenu_lieu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+}
+
+
+/*** couleur typo 
+   ========================================================================== */
+h1 {
+    color: var(--couleur-police-titre);
+    text-align: center;
+}
+
+h2,
+#texte_personnage,
+#texte_objet,
+#texte_lieu {
+    color: var(--bleu_pale);
+    text-align: center;
+}
+
+#texte_personnage,
+#texte_objet,
+#texte_lieu {
+    font-size: 6rem;
+    margin: 0;
+}
+
+#texte_personnage.debutee,
+#texte_objet.debutee,
+#texte_lieu.debutee {
+    font-size: 2rem;
+    margin: 7px 0 10px 0;
+}
+
+#zoneMessageEnqueteCompletee,
+#messageEtatEnquete,
+#zoneEnigme {
+    margin: 15px 10px;
+    text-align: center;
+    color: var(--couleur-police-titre);
+}
+
+@media (min-width: 600px) {
+    #zoneMessageEnqueteCompletee,
+    #messageEtatEnquete,
+    #zoneEnigme {
+        margin: 20px 30px;
+    }
+}
+
+@media (min-width: 800px) {
+    #zoneMessageEnqueteCompletee,
+    #messageEtatEnquete,
+    #zoneEnigme {
+        max-width: 1000px;
+        margin: 20px auto;
+
+    }
+}
+
+
+/*** style formulaire fiche perso
+   ========================================================================== */
+.enquete ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.enquete li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enquete label {
+    padding-top: 0.7em;
+    font-size: 3rem;
+    color: var(--bleu_pale);
+}
+
+.enquete legend {
+    font-size: 4rem;
+    color: var(--couleur-police-titre);
+}
+
+.enquete input {
+    transform: scale(2);
+    accent-color: #263546;
+}

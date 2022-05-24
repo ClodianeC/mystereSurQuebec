@@ -1,0 +1,187 @@
+/**
+ * Typographie responsive (Mobile First)
+   ========================================================================
+ * Les valeurs de taille de police suggérées ici sont à titre indicatif.
+ * À ajuster selon la direction visuelle et le choix de polices de caractères.
+ *
+ * @author Maxime Graignon 2031817@csfoy.ca
+ *
+ * TABLE DES MATIÈRES
+ * Polices
+ * Base décimale
+ * Hiérarchie responsive
+ *
+ *
+ * Doc des points de rupture :
+ * ==========================================================================
+ * Écran étroit : de 0 à 599px
+ * point de rupture: 600px
+ *
+ * Écran moyen : de 600 à 799px
+ * point de rupture: 800px
+ *
+ * Écran large : 800px et +
+ */
+
+/* Polices */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Andika+New+Basic:ital,wght@1,700&family=Arbutus+Slab&family=Roboto:ital,wght@1,700&display=swap');
+
+h1,
+.h1 {
+    font-family: var(--fonteTitreH1);
+}
+
+h2,
+.h2 {
+    font-family: var(--fonteTitreH2);
+}
+
+body {
+    font-family: var(--fonteParagraphe);
+}
+
+nav,
+.nav {
+    font-family: var(--fonteNav);
+}
+
+footer_paragraphe,
+.footer_paragraphe {
+    font-family: var(--fonteFooter);
+}
+
+bouton,
+.bouton {
+    font-family: var(--fonteBouton);
+}
+
+
+/* Base décimale */
+html {
+    font-size: 62.5%;
+}
+
+
+/* Hiérarchie responsive : plus proche = plus petit  &  plus loin = plus grand */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h1,
+.h1 { /* = 43px */
+    font-size: 4.3rem;
+}
+
+@media (min-width: 600px) {
+    h1,
+    .h1 { /* = 76px */
+        font-size: 7.6rem;
+    }
+}
+
+@media (min-width: 800px) {
+    h1,
+    .h1 { /* = 120px */
+        font-size: 12rem;
+    }
+}
+
+h2,
+.h2 { /* = 24px */
+    font-size: 2.4rem;
+}
+
+@media (min-width: 600px) {
+    h2,
+    .h2 { /* = 25px */
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 800px) {
+    h2,
+    .h2 { /* = 40px */
+        font-size: 4.0rem;
+    }
+}
+
+body,
+.body {
+    /* = 20px */
+    font-size: 2rem;
+}
+
+@media (min-width: 600px) {
+    body,
+    .body {
+        /* = 24px */
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 800px) {
+    body,
+    .body {
+        /* = 24px */
+        font-size: 2.4rem;
+    }
+}
+
+
+nav,
+.nav { /* = 40px */
+    font-size: 4rem;
+}
+
+@media (min-width: 600px) {
+    nav,
+    .nav { /* = 40px */
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 800px) {
+    nav,
+    .nav { /* = 31px */
+        font-size: 3.1rem;
+    }
+}
+
+footer_paragraphe,
+.footer_paragraphe { /* = 17px */
+    font-size: 1.7rem;
+}
+
+@media (min-width: 600px) {
+    footer_paragraphe,
+    .footer_paragraphe { /* = 28px */
+        font-size: 2.8rem;
+    }
+}
+
+@media (min-width: 800px) {
+    footer_paragraphe,
+    .footer_paragraphe { /* = 28px */
+        font-size: 2.8rem;
+    }
+}
+
+bouton,
+.bouton { /* = 20px */
+    font-size: 2rem;
+}
+
+@media (min-width: 600px) {
+    bouton,
+    .bouton { /* = 30px */
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 800px) {
+    bouton,
+    .bouton { /* = 30px */
+        font-size: 3rem;
+    }
+}

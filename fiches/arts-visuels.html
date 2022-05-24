@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mystère sur Québec est un jeu-enquête imaginé par Énigma, firme spécialisée. Les données proviennent des épigraphes historiques de la Ville de Québec. Il est réalisé par X, Y et Z, étudiants en première année du programme Techniques d’intégration multimédia.">
+    <meta name="keywords"
+        content="Énigma, jeu-enquête, épigraphes, données ouvertes, Mystère sur Québec, personnages historiques" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="author" content="Maxime Graignon">
+    <title>Mystère sur Québec</title>
+    <link href="../css/mandatAAccueil.css" type="text/css" rel="stylesheet">
+    <!-- <link href="../css/mandatBCarte.css" type="text/css" rel="stylesheet"> -->
+    <link href="../css/mandatCEnquete.css" type="text/css" rel="stylesheet">
+    <link href="../css/mandatDConcours.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="body">
+    <noscript>
+        <p>Pour apprécier pleinement ce site, votre navigateur doit disposer de JavaScript, ce qui ne semble pas être le
+            cas présentement. Alternativement, vous pouvez consulter le site de la Ville de Québec pour découvrir les
+            épigraphes historiques :
+            <a
+                href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/index.aspx">ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/</a>
+        </p>
+    </noscript>
+
+    <!-- DÉBUT navigation commune à inclure dans toutes les pages -->
+    <a href="#contenu" class="screen-reader-only focusable">Allez au contenu</a>
+    <header class="header__section" role="banner">
+        <h1 class="screen-reader-only focusable">Mystère sur Québec</h1>
+        <a href="../accueil/index.html">
+            <picture class="header__picture">
+                <source srcset="../images/general/entete/entete_mobile.svg" media="(max-width:500px)">
+                <source srcset="../images/general/entete/entete_tablette.svg" media="(max-width:600px)">
+                <source srcset="../images/general/entete/entete_table.svg" media="(min-width:601px)">
+                <img src="../images/general/entete/entete_table.svg" alt="Logo de Mystère sur Québec">
+            </picture>
+        </a>
+        <nav class="nav">
+            <ul class="nav__liste">
+                <li class="nav__itemAccueil">
+                    <a class="nav__lien" href="../accueil/">Accueil</a>
+                </li>
+                <li class="nav__itemCarte">
+                    <a class="nav__lien" href="../carte/">Carte</a>
+                </li>
+                <li class="nav__itemEnquete">
+                    <a class="nav__lien" href="../enquete/">Enquête</a>
+                </li>
+                <li class="nav__itemContact">
+                    <a class="nav__lien" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN navigation commune à inclure dans toutes les pages -->
+
+    <main class="main" role="main">
+        <section class="main_titre">
+            <h1 class="focusable h1">Fiche de personnage</h1>
+            <h4 class="focusable h4" id="categorie">Arts visuels</h4>
+            <h2><span id="prenom">Edmund </span><span id="nom">Alleyn</span><img
+                    src="../images/fiche_perso/iconeArtsVisuels.png" class="icone_fiche"></h2>
+
+        </section>
+
+        <section class="main_sect1">
+            <div class="decoration">
+                <div class="sect1--A">
+                    <div class="personnage_wrapper">
+                        <picture class="personnage">
+                            <source
+                                srcset="../images/fiche_perso/e0001/portrait_300.jpg 1x, ../images/fiche_perso/e0001/portrait_600.jpg 2x"
+                                media="(max-width:800px)">
+                            <source
+                                srcset="../images/fiche_perso/e0001/portrait_450.jpg 1x, ../images/fiche_perso/e0001/portrait_900.jpg 2x"
+                                media="(min-width:801px)">
+                            <img src="../images/fiche_perso/e0001/portrait_300.jpg" alt="" id="url_image">
+                            <p>
+                                <span id="titre_image">Edmund Alleyn dans son atelier</span> <br>
+                                ©<span id="credit_image">Gabor Szilasi</span>
+                            </p>
+                        </picture>
+
+                    </div>
+
+                    <div class="notes_biographiques" id="notes_biographiques">
+                        <h2>Notes biographiques</h2>
+                        <p>
+                            Edmund Alleyn est né à Québec en 1931. Il est un artiste peintre. Edmund Alleyn a étudié à
+                            l'école des beaux-arts de Québec, auprès de Jean-Paul Lemieux et Jean Dallaire. Il séjourne
+                            en France de 1955 à 1970.
+                        </p>
+                        <p>
+                            De retour au Québec, Alleyn est frappé par le changement que les années ont opéré sur son
+                            pays et le devenir sociopolitique du territoire entre dans ses préoccupations artistiques.
+                            Parallèlement, il obtient un poste de professeur au département d'arts visuels de
+                            l'Université d'Ottawa, où il enseignera durant plus de 15 ans.
+                        </p>
+                        <p>
+                            Aujourd’hui, Alleyn expose régulièrement dans les Musées et les galeries, tant au Québec
+                            qu'en Ontario, et à New York.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sect1--B">
+                    <div class="localisation_coordonnees" id="localisation">
+                        <h2 class="h2">Localisation</h2>
+                        <figure>
+                            <figcaption>
+                                <h3>Arrondissement:
+                                    <span id="arrondissement">La Cité-Limoilou</span>
+                                </h3>
+                                <h3>Quartier:
+                                    <span id="quartier">Vieux-Québec/Cap-Blanc/Colline parlementaire</span>
+                                </h3>
+                                <h3>Adresse:
+                                    <span id="adresse">85, rue Wilfrid-Laurier</span>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="localisation_img">
+                        <picture class="localisation_img--Zoom">
+                            <source
+                                srcset="../images/fiche_perso/e0001/lieu_300.jpg 1x, ../images/fiche_perso/e0001/lieu_600.jp 2x"
+                                media="(max-width:800px)">
+                            <source
+                                srcset="../images/fiche_perso/e0001/lieu_500.jpg 1x, ../images/fiche_perso/e0001/lieu_1000.jpg 2x"
+                                media="(min-width:801px)">
+                            <img src="../images/fiche_perso/e0001/lieu_300.jpg" alt="" id="carteZoom">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="main_sect2">
+            <div class="decoration2  ">
+                <div class="sect2--A">
+                    <div class="sect-epigraphe">
+                        <h2 class="h2">Épigraphe</h2>
+
+                        <picture class="plaque">
+                            <source
+                                srcset="../images/fiche_perso/e0001/epigraphe_300.jpg 1x, ../images/fiche_perso/e0001/epigraphe_600.jp 2x"
+                                media="(max-width:800px)">
+                            <source
+                                srcset="../images/fiche_perso/e0001/epigraphe_510.jpg 1x, ../images/fiche_perso/e0001/epigraphe_1020.jpg 2x"
+                                media="(min-width:801px)">
+                            <img class="plaque_img" src="../images/fiche_perso/e0001/epigraphe_300.jpg" alt=""
+                                id="url_plaque">
+                        </picture>
+                        <p id="transcript"></p>
+
+                        <!--                         <figure>
+                            <img width="300" src="../images/plaque_alleyn.png" alt="Épigraphe de Edmund Alleyn"
+                                id="url_plaque">
+                            <figcaption id="transcript">Ici vécut Edmund Alleyn(1931-2004). Peintre et artiste
+                                polyvalent,
+                                créateur
+                                d'une oeuvre originale et en constante mutation.
+                            </figcaption>
+                        </figure> -->
+                    </div>
+
+                    <div class="sect-capSonore">
+                        <h2 class="h2">Capsule sonore</h2>
+                        <p id="audio_desc"></p>
+                        <h3 class="h3">Transcription textuelle</h3>
+                        <p id="audio_preambule">Tout jeune, le peintre Edmund Alleyn vivait près du fleuve. L’eau, la
+                            lumière,
+                            les
+                            voyages ont nourri son imagination. Esprit libre, il explorait toutes les formes
+                            d’expression.
+                            Allons à
+                            la rencontre de cet artiste qui était en avance sur son temps.</p>
+                        <audio class="audio_console" controls id="audio_url">
+                            <source src="http://www.ville.quebec.qc.ca/sons/epigraphes/epigraphes_alleyn.mp3"
+                                type="audio/mpeg" />
+                            Votre navigateur ne propose pas de lecteur audio.
+                            Consultez la transcription textuelle qui suit.
+                        </audio>
+                        <textarea class="audio_transcription" id="audio_transcription"
+                            disabled>Mon père est né en 1931 à Québec de parents moitié irlandais, moitié anglais donc vraiment la souche anglophone du Québec...</textarea>
+                        <h3 class="h3">Crédits de la narration</h3>
+                        <p id="audio_credit">Jennifer Alleyn est cinéaste. Elle s’investit dans la transmission de
+                            l’œuvre de son père, entre autres par la publication d’un site Internet et la réalisation de
+                            documentaires.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <aside role="complementary">
+            <!-- Si l’utilisateur n’a pas débuté une enquête -->
+            <div id="zoneAuncuneEnqueteEnCours" hidden>
+                <h2 class="h2">Soumettre cette fiche comme pièce à conviction</h2>
+                <p><span id="statusEnquete">Aucune enquête en cours. Si vous désirez débuter une enquête, visitez la
+                        page <a href="../enquete/index.html">Enquête</a>.</span></p>
+            </div>
+
+            <!-- Si une enquête est en cours -->
+            <div id="zoneEnqueteEnCours">
+                <form>
+                    <fieldset class="enquete">
+                        <legend for="enquete">Soumettre cette fiche comme pièce à conviction <span
+                                id="progressionEnquete">(0 indice trouvé sur 3)</span></legend>
+                        <ul>
+                            <li>
+                                <input type="radio" name="formEnquete" value="personnage" id="personnage" required>
+                                <label for="personnage">Personnage<span class="checkmark"></span></label>
+
+                            </li>
+                            <li>
+                                <input type="radio" name="formEnquete" value="lieu" id="lieu">
+                                <label for="lieu">Lieu<span class="checkmark"></span></label>
+
+                            </li>
+                            <li>
+                                <input type="radio" name="formEnquete" value="objet" id="objet">
+                                <label for="objet">Objet<span class="checkmark"></span></label>
+
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <p id="message"></p>
+                    <p class="bouton">
+                        <a href="">
+                            <button class="btn" id="btnSoumettre" type="button">Soumettre</button>
+                        </a>
+                    </p>
+                </form>
+                <ul class="liens">
+                    <li>
+                        <a class="lien" href=" ../enquete/index.html">Vérifier votre progression dans la résolution du
+                            mystère</a>
+                    </li>
+                    <li>
+                        <a class="lien" href="../carte/index.html">Poursuivre l’enquête </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- DÉBUT navigation commune à inclure dans toutes les pages -->
+    <footer class="footer">
+        <nav class="nav_nav">
+            <ul class="nav__liste">
+                <li class="nav__itemAccueil">
+                    <a class="nav__lien" href="../accueil/index.html">Accueil</a>
+                </li>
+                <li class="nav__itemCarte">
+                    <a class="nav__lien" href="../carte/">Carte</a>
+                </li>
+                <li class="nav__itemEnquete">
+                    <a class="nav__lien" href="../enquete/">Enquête</a>
+                </li>
+                <li class="nav__itemContact">
+                    <a class="nav__lien" href="../contact/">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="footer_paragraphe">
+            <div class="footer_grid">
+                <picture class="footer_medias">
+                    <img src="/images/footer/carte.png" alt="Carte de l'Adresse indiqué">
+                </picture>
+                <p class="footer_p">Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec.<br />
+                    418-654-9823</p>
+            </div>
+            <p class="nous_joindre">Nous joindre</p>
+            <nav class="nav_medias">
+                <ul class="item_sociaux_ul">
+                    <li class="item_sociaux">
+                        <a class="lien_sociaux facebook" href="facebook/"></a>
+                    </li>
+                    <li class="item_sociaux">
+                        <a class="lien_sociaux twitter" href="twitter/"></a>
+                    </li>
+                    <li class="item_sociaux">
+                        <a class="lien_sociaux youtube" href="youtube/"></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <p class="footer_remerciement">Merci à l’équipe des données ouvertes de la Ville de Québec qui a
+                rendu
+                disponibles le jeu de données « Épigraphes historiques »
+                sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et
+                servir
+                de prétexte au « Mystère sur Québec ».
+    </footer>
+
+
+    <p class="copyright">Une réalisation de Clodiane Charette, Maxime Graignon, Michel Kingma-Lord et
+        Benjamin
+        Brouillette. © Tous droits réservés. Travail scolaire réalisé en mars 2022.
+        Programme Techniques d’intégration multimédia.</p>
+    </div>
+    </footer>
+    <!-- FIN navigation commune à inclure dans toutes les pages -->
+
+    <script src="../js/epigraphes.js"></script>
+    <script src="economie-et-politique.js"></script>
+</body>
+
+</html>

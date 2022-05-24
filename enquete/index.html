@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mystère sur Québec est un jeu-enquête imaginé par Énigma, firme spécialisée. Les données proviennent des épigraphes historiques de la Ville de Québec. Il est réalisé par X, Y et Z, étudiants en première année du programme Techniques d’intégration multimédia.">
+        <meta name="keywords" content="Énigma, jeu-enquête, épigraphes, données ouvertes, Mystère sur Québec, personnages historiques" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="author" content="Clodiane Charette">
+        <title>Mystère sur Québec - Enquête</title>
+        <link href="../css/mandatAAccueil.css" type="text/css" rel="stylesheet">
+        <link href="../css/mandatBCarte.css" type="text/css" rel="stylesheet">
+        <link href="../css/mandatCEnquete.css" type="text/css" rel="stylesheet">
+        <link href="../css/mandatDConcours.css" type="text/css" rel="stylesheet">
+        <!-- <link href="../css/mandatAAccueil.min.css" type="text/css" rel="stylesheet"> -->
+        <!-- <link href="../css/mandatBCarte.min.css" type="text/css" rel="stylesheet"> -->
+        <!-- <link href="../css/mandatCEnquete.min.css" type="text/css" rel="stylesheet"> -->
+        <!-- <link href="../css/mandatDConcours.min.css" type="text/css" rel="stylesheet"> -->
+    </head>
+    <body>
+        <a href="#contenu" class="screen-reader-only focusable">Allez au contenu</a>
+        <header class="header__section" role="banner">
+            <h1 class="screen-reader-only focusable">Mystère sur Québec</h1>
+            <a href="../accueil/index.html">
+                <picture class="header__picture">
+                    <source srcset="../images/general/entete/entete_mobile.svg" media="(max-width:500px)">
+                    <source srcset="../images/general/entete/entete_tablette.svg" media="(max-width:600px)">
+                    <source srcset="../images/general/entete/entete_table.svg" media="(min-width:601px)">
+                    <img src="../images/general/entete/entete_table.svg" alt="Logo de Mystère sur Québec">
+                </picture>
+            </a>
+            <nav class="nav">
+                <ul class="nav__liste">
+                    <li class="nav__itemAccueil">
+                        <a class="nav__lien" href="../accueil/">Accueil</a>
+                    </li>
+                    <li class="nav__itemCarte">
+                        <a class="nav__lien" href="../carte/">Carte</a>
+                    </li>
+                    <li class="nav__itemEnquete">
+                        <a class="nav__lien" href="../enquete/">Enquête</a>
+                    </li>
+                    <li class="nav__itemContact">
+                        <a class="nav__lien" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main role="main">
+            <h1 class="titre_principal">Enquête</h1>
+            <p id="messageEtatEnquete">Aucune enquête en cours.</p>
+            <p id="zoneEnigme">
+                <span id="personnageSegment">Un artiste peintre avant-gardiste</span>
+                <span id="objetSegment"> a lu le roman «Les Anciens canadiens» </span>
+                <span id="lieuSegment"> à la maison Kerhulu.</span>
+            </p>
+            <div class="contenu">
+                <div class="contenu_personnage">
+                    <h2 class="titre_secondaire">Personnage</h2>
+                    <picture class="picture_personnage">
+                        <source
+                            srcset="../images/enquete/01_initiale/personnage_250.jpg 1x, ../images/enquete/01_initiale/personnage_500.jpg 2x"
+                            media="(max-width:500px)">
+                        <source
+                            srcset="../images/enquete/01_initiale/personnage_130.jpg 1x, ../images/enquete/01_initiale/personnage_260.jpg 2x"
+                            media="(min-width:501px max-width:800px)">
+                        <source
+                            srcset="../images/enquete/01_initiale/personnage_250.jpg 1x, ../images/enquete/01_initiale/personnage_500.jpg 2x"
+                            media="(min-width:801px)">
+                        <img class="img_personnage" src="../images/enquete/01_initiale/personnage_250.jpg"
+                            alt="Silhouette d'une victime">
+                    </picture>
+                    <p id="texte_personnage">?</p>
+                </div>
+                <div class="contenu_objet">
+                    <h2 class="titre_secondaire">Objet</h2>
+                    <picture class="picture_objet">
+                        <source
+                            srcset="../images/enquete/01_initiale/objet_250.jpg 1x, ../images/enquete/01_initiale/objet_500.jpg 2x"
+                            media="(max-width:500px)">
+                        <source
+                            srcset="../images/enquete/01_initiale/objet_130.jpg 1x, ../images/enquete/01_initiale/objet_260.jpg 2x"
+                            media="(min-width:501px max-width:800px)">
+                        <source
+                            srcset="../images/enquete/01_initiale/objet_250.jpg 1x, ../images/enquete/01_initiale/objet_500.jpg 2x"
+                            media="(min-width:801px)">
+                        <img class="img_objet" src="../images/enquete/01_initiale/objet_250.jpg"
+                            alt="Silhouette d'une victime">
+                    </picture>
+                    <p id="texte_objet">?</p>
+                </div>
+                <div class="contenu_lieu">
+                    <h2 class="titre_secondaire">Lieu</h2>
+                    <picture class="picture_lieu">
+                        <source
+                            srcset="../images/enquete/01_initiale/lieu_250.jpg 1x, ../images/enquete/01_initiale/lieu_500.jpg 2x"
+                            media="(max-width:500px)">
+                        <source
+                            srcset="../images/enquete/01_initiale/lieu_130.jpg 1x, ../images/enquete/01_initiale/lieu_260.jpg 2x"
+                            media="(min-width:501px max-width:800px)">
+                        <source
+                            srcset="../images/enquete/01_initiale/lieu_250.jpg 1x, ../images/enquete/01_initiale/lieu_500.jpg 2x"
+                            media="(min-width:801px)">
+                        <img class="img_lieu" src="../images/enquete/01_initiale/lieu_250.jpg"
+                            alt="Silhouette d'une victime">
+                    </picture>
+                    <p id="texte_lieu">?</p>
+                </div>
+            </div>
+            <p id="zoneMessageEnqueteCompletee" hidden>Bravo! Votre avez résolu l’énigme!</p>
+            <div class="boutons">
+                <button id="pigerNouvelEnigme" class="btn cache">Piger une nouvelle énigme</button>
+                <button id="pigerEnigme" class="btn">Piger une énigme</button>
+                <a href="../carte/" id="allerCarte" class="btn cache">Aller à la carte</a>
+                <a href="../concours/" id="allerConcours" class="btn cache">Accéder au concours</a>
+            </div>
+        </main>
+        <footer class="footer">
+            <nav class="nav_nav">
+                <ul class="nav__liste">
+                    <li class="nav__itemAccueil">
+                        <a class="nav__lien" href="../accueil/index.html">Accueil</a>
+                    </li>
+                    <li class="nav__itemCarte">
+                        <a class="nav__lien" href="../carte/">Carte</a>
+                    </li>
+                    <li class="nav__itemEnquete">
+                        <a class="nav__lien" href="../enquete/">Enquête</a>
+                    </li>
+                    <li class="nav__itemContact">
+                        <a class="nav__lien" href="../contact/">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer_paragraphe">
+                <div class="footer_grid">
+                <picture class="footer_medias">
+                    <img src="/images/footer/carte.png" alt="Carte de l'Adresse indiqué" >
+                </picture>
+                <p class="footer_p">Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec.<br /> 418-654-9823</p>
+                </div>
+                <p class="nous_joindre">Nous joindre</p>
+                <nav class="nav_medias">
+                    <ul class="item_sociaux_ul">
+                        <li class="item_sociaux">
+                            <a class="lien_sociaux facebook" href="facebook/"></a>
+                        </li>
+                        <li class="item_sociaux">
+                            <a class="lien_sociaux twitter" href="twitter/"></a>
+                        </li>
+                        <li class="item_sociaux">
+                            <a class="lien_sociaux youtube" href="youtube/"></a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="footer_remerciement">Merci à l’équipe des données ouvertes de la Ville de Québec qui a
+                    rendu
+                    disponibles le jeu de données « Épigraphes historiques »
+                    sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et
+                    servir
+                    de prétexte au « Mystère sur Québec ».</footer>
+                <p class="copyright">Une réalisation de Clodiane Charette, Maxime Graignon, Michel Kingma-Lord et
+                    Benjamin
+                    Brouillette. © Tous droits réservés. Travail scolaire réalisé en mars 2022.
+                    Programme Techniques d’intégration multimédia.</p>
+            </div>
+        </footer>
+        <script src="../js/epigraphes.js"></script>
+        <script src="enquete.js"></script>
+    </body>
+</html>

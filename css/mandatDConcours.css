@@ -1,0 +1,456 @@
+@charset "UTF-8";
+/**
+ * @author Maxime Graignon <2031817@csfoy.ca>
+ *
+ * TABLE DES MATIERES
+ * Grille
+ * Utilitaires
+ * Charte typographique
+ * Body
+ * Mise en page
+ *** Titre
+ *** Main
+ *** Formulaire
+ *** footer
+ */
+
+/* Grille
+========================================================================== */
+/*@import url(grille.css);*/
+
+/* Charte typographique
+   ========================================================================== */
+@import url(typo.css);
+
+/* Utilitaires
+   ========================================================================== */
+@import url(utilitaires.css);
+
+
+/* Body
+   ========================================================================== */
+body {
+    background-color: #D2CDC9;
+    background-image: url(../images/general/brickwall.png);
+    background-blend-mode: difference;
+    max-width: 100%;
+}
+
+
+/* MISE EN PAGE
+   ========================================================================== */
+
+/* Titre */
+.h1 {
+    text-align: center;
+    color: #F9EC93;
+    padding-top: 40px;
+}
+
+@media (min-width: 801px) {
+    .h1 {
+        text-align: center;
+    }
+}
+
+.h2 {
+    margin-left: 15px;
+    color: #FFFFFF;
+}
+
+.h3 {
+    color: #FFFFFF;
+}
+
+
+/* Main */
+.conteneur_paragraphe {
+    margin-left: 15px;
+    color: #FFFFFF;
+}
+
+@media (min-width: 601px) {
+    .conteneur_image {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+@media (min-width: 801px) {
+    .conteneur_paragraphe {
+        display: grid;
+        max-width: 100%;
+        gap: 15px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            "A A A A A A A A . . . ."
+            "B B . . . . . C C C C C"
+            "D D D . . . . C C C C C"
+            "E E E E . . . C C C C C";
+    }
+
+    .conteneur_paragraphe_01 {
+        grid-area: A;
+
+    }
+
+    .premier_element {
+        grid-area: B;
+    }
+
+    .conteneur_image {
+        grid-area: C;
+    }
+
+    .deuxieme_element {
+        grid-area: D;
+    }
+
+    .troisieme_element {
+        grid-area: E;
+    }
+
+}
+
+
+/* Formulaire*/
+.formulaire {
+    text-align: center;
+    color: #F9EC93;
+}
+
+.nom_complet {
+    background-color: #263546;
+    border: 0;
+    max-width: 100%;
+    padding-left: 0;
+}
+
+.coupon_participation_formulaire {
+    background-color: #263546;
+    border-style: solid;
+    border-color: #F9EC93;
+    margin: 10px;
+}
+
+label {
+    display: flex;
+    justify-content: flex-start;
+}
+
+input {
+    width: 180px;
+    border-style: solid;
+    border-color: #F2EDE7;
+    background-color: #C4C4C4;
+    opacity: 75%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+optgroup {
+    display: flex;
+    justify-content: flex-start;
+}
+
+select {
+    width: 180px;
+    border-style: solid;
+    border-color: #F2EDE7;
+    background-color: #C4C4C4;
+    opacity: 75%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.adresse {
+    display: flex;
+    flex-direction: column;
+}
+
+.ville {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.numero {
+    display: flex;
+    flex-direction: column;
+}
+
+.province {
+    display: flex;
+    flex-direction: column;
+}
+
+.courriel {
+    display: flex;
+    flex-direction: column;
+}
+
+p.erreur {
+    margin: 0;
+    padding-top: 0;
+    color: red;
+    text-align: left;
+}
+
+#ville,
+#province,
+#numero,
+#courriel {
+    width: 245px;
+}
+
+#mystere-resolu {
+    background-color: #FFFFFF;
+    height: 150px;
+}
+
+@media (min-width: 601px) {
+    input {
+        width: 311px;
+        border-style: solid;
+        border-color: #F2EDE7;
+        background-color: #C4C4C4;
+        opacity: 50%;
+    }
+
+    #ville,
+    #province,
+    #numero,
+    #courriel {
+        width: 488px;
+    }
+}
+
+#mystere-resolu {
+    max-width: 80%;
+}
+
+.reglement {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#acceptation_reglement {
+    display: block;
+    width: 15px;
+}
+
+#acceptation_reception {
+    display: block;
+    width: 20px;
+}
+
+.bouton_soumettre {
+    text-align: center;
+}
+
+.btn {
+    background-color: #F9EC9320;
+    color: #F9EC93;
+    border: 3px solid #F9EC93;
+    padding: 10px;
+    width: 275px;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: var(--fonteBouton);
+    font-size: 3rem;
+}
+
+.boutons {
+    margin: auto;
+    width: 275px;
+}
+
+.paragraphe_reglement {
+    display: flex;
+}
+
+.paragraphe {
+    color: #FFFFFF;
+}
+
+.yellow {
+    color: #F9EC93;
+}
+
+.paragraphe_reglement {
+    padding: 15px;
+}
+
+#mystere-resolu {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (min-width: 601px) {
+    #mystere-resolu {
+        width: 500px;
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 801px) {
+    #mystere-resolu {
+        width: 800px;
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+
+/* footer */
+.footer_paragraphe {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer {
+    color: #FFFFFF;
+}
+
+.footer_p {
+    text-align: center;
+}
+
+img {
+    padding-top: 50px;
+
+}
+
+@media (min-width: 801px) {
+
+    .footer_grid {
+        display: grid;
+        max-width: 100%;
+        gap: 15px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            "A A A A A A . . . . . ."
+            "A A A A A A B B B B B B"
+            "A A A A A A . . . . . .";
+    }
+
+    .footer_medias {
+        grid-area: A;
+    }
+
+    .footer_p {
+        grid-area: B;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .footer_grid {
+        display: grid;
+        max-width: 100%;
+        gap: 15px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            "A A A A A A . . . . . ."
+            "A A A A A A B B B B B B"
+            "A A A A A A . . . . . .";
+    }
+
+    .footer_medias {
+        grid-area: A;
+    }
+
+    .footer_p {
+        grid-area: B;
+    }
+}
+
+#reglement, 
+#reception {
+    color: var(--couleur-principale);
+}
+
+.footer_remerciement{
+    padding: 0%;
+}
+
+.nav__liste {
+    padding: 0;
+}
+
+.nav__item {
+    border-bottom: 3px solid #F9EC93;
+}
+
+.nav__item:last-child {
+    border-bottom: none;
+}
+
+.item_sociaux_ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.item_sociaux {
+    margin: 6px;
+    text-align: center;
+}
+
+
+@media (min-width: 801px) {
+    .item_sociaux_ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .item_sociaux_ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+        padding: 0;
+    }
+
+    .footer_medias {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.nous_joindre {
+    text-align: center;
+    padding-top: 25px;
+    font-family: var(--fonteParagraphe);
+}
+
+
+@media (min-width: 801px) {
+    .nous_joindre {
+        text-align: center;
+        padding-top: 25px;
+        font-family: var(--fonteParagraphe);
+    }
+}
+
+.copyright {
+    color: #FFFFFF;
+    width: 100%;
+}

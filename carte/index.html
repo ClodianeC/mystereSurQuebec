@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Mystère sur Québec est un jeu-enquête imaginé par Énigma, firme spécialisée. Les données proviennent des épigraphes historiques de la Ville de Québec. Il est réalisé par X, Y et Z, étudiants en première année du programme Techniques d’intégration multimédia.">
+    <meta name="keywords"
+          content="Énigma, jeu-enquête, épigraphes, données ouvertes, Mystère sur Québec, personnages historiques"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="author" content="Benjamin Brouillette">
+    <title>Mystère sur Québec - Carte</title>
+    <!--    <link href="../css/mandatAAccueil.css" type="text/css" rel="stylesheet">-->
+    <link href="../css/mandatBCarte.css" type="text/css" rel="stylesheet">
+    <link href="../css/mandatCEnquete.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<a href="#contenu" class="screen-reader-only focusable">Allez au contenu</a>
+<header class="header__section" role="banner">
+    <h1 class="screen-reader-only focusable">Mystère sur Québec</h1>
+    <a href="../accueil/index.html">
+        <picture class="header__picture">
+            <source srcset="../images/general/entete/entete_mobile.svg" media="(max-width:500px)">
+            <source srcset="../images/general/entete/entete_tablette.svg" media="(max-width:600px)">
+            <source srcset="../images/general/entete/entete_table.svg" media="(min-width:601px)">
+            <img src="../images/general/entete/entete_table.svg" alt="Logo de Mystère sur Québec">
+        </picture>
+    </a>
+    <nav class="nav">
+        <ul class="nav__liste">
+            <li class="nav__itemAccueil">
+                <a class="nav__lien" href="../accueil/">Accueil</a>
+            </li>
+            <li class="nav__itemCarte">
+                <a class="nav__lien" href="../carte/">Carte</a>
+            </li>
+            <li class="nav__itemEnquete">
+                <a class="nav__lien" href="../enquete/">Enquête</a>
+            </li>
+            <li class="nav__itemContact">
+                <a class="nav__lien" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main role="main">
+    <h1 id="contenu" class="carte_h1">Carte</h1>
+
+    <div id="carte">
+    </div>
+
+    <h2 class="carte_h2">Galerie de portraits</h2>
+    <div class="conteneur">
+        <a class="lien_fiche_perso" href="../fiches/arts-visuels.html?id=e0001&titre=Edmund_Alleyn">
+            <picture class="carte_perso1">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0001/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0001/portrait_600.jpg">
+                <img class="img_carte_perso1 img" src="../images/fiche_perso/e0001/portrait_300.jpg"
+                     alt="Une image d'Edmund Alley">
+            </picture>
+            Edmund Alleyn</a>
+
+        <a class="lien_fiche_perso"
+           href="../fiches/sciences-et-lettres.html?id=e0002&titre=Philippe-Joseph_Aubert-de-Gaspe">
+            <picture class="carte_perso2">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0002/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0002/portrait_600.jpg">
+                <img class="img_carte_perso2 img" src="../images/fiche_perso/e0002/portrait_600.jpg"
+                     alt="Une image de Philippe-Joseph Aubert de Gaspé">
+            </picture>
+            Philippe-Joseph Aubert de Gaspé</a>
+
+        <a class="lien_fiche_perso" href="../fiches/sports-et-spectacles.html?id=e0004&titre=Henriette_Belley">
+            <picture class="carte_perso3">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0004/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0004/portrait_600.jpg">
+                <img class="img_carte_perso3 img" src="../images/fiche_perso/e0004/portrait_600.jpg"
+                     alt="Une image de Henriette Belley">
+            </picture>
+            Henriette Belley</a>
+
+        <a class="lien_fiche_perso" href="../fiches/sciences-et-lettres.html?id=e0005&titre=Robert_Blatter">
+            <picture class="carte_perso4">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0005/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0005/portrait_600.jpg">
+                <img class="img_carte_perso4 img" src="../images/fiche_perso/e0005/portrait_600.jpg"
+                     alt="Une image de Robert Blatter">
+            </picture>
+            Robert Blatter</a>
+
+        <a class="lien_fiche_perso" href="../fiches/economie-et-politique.html?id=e0007&titre=Joseph_Knight-Boswell">
+            <picture class="carte_perso5">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0007/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0007/portrait_600.jpg">
+                <img class="img_carte_perso5 img" src="../images/fiche_perso/e0007/portrait_600.jpg"
+                     alt="Une image de Joseph Knight Boswell">
+            </picture>
+            Joseph Knight Boswell</a>
+
+        <a class="lien_fiche_perso" href="../fiches/economie-et-politique.html?id=e0008&titre=Marthe_Caillaud-Simard">
+            <picture class="carte_perso6">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0008/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0008/portrait_600.jpg">
+                <img class="img_carte_perso6 img" src="../images/fiche_perso/e0008/portrait_600.jpg"
+                     alt="Une image de Marthe Caillaud Simard">
+            </picture>
+            Marthe Caillaud Simard</a>
+
+        <a class="lien_fiche_perso" href="../fiches/sports-et-spectacles.html?id=e0012&titre=Johnny_Farago">
+            <picture class="carte_perso7">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0012/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0012/portrait_600.jpg">
+                <img class="img_carte_perso7 img" src="../images/fiche_perso/e0012/portrait_600.jpg"
+                     alt="Une image de Johnny Farago">
+            </picture>
+            Johnny Farago</a>
+
+        <a class="lien_fiche_perso" href="../fiches/sports-et-spectacles.html?id=e0015&titre=Camille_Henry">
+            <picture class="carte_perso8">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0015/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0015/portrait_600.jpg">
+                <img class="img_carte_perso8 img" src="../images/fiche_perso/e0015/portrait_600.jpg"
+                     alt="Une image de Camille Henry">
+            </picture>
+            Camille Henry</a>
+
+        <a class="lien_fiche_perso" href="../fiches/arts-visuels.html?id=e0016&titre=Louis_Jobin">
+            <picture class="carte_perso9">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0016/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0016/portrait_600.jpg">
+                <img class="img_carte_perso9 img" src="../images/fiche_perso/e0016/portrait_600.jpg"
+                     alt="Une image de Louis Jobin">
+            </picture>
+            Louis Jobin</a>
+
+        <a class="lien_fiche_perso" href="../fiches/sciences-et-lettres.html?id=e0019&titre=Sigismund_Mohr">
+            <picture class="carte_perso10">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0019/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0019/portrait_600.jpg">
+                <img class="img_carte_perso10 img" src="../images/fiche_perso/e0019/portrait_600.jpg"
+                     alt="Une image de Sigismund Mohr">
+            </picture>
+            Sigismund Mohr</a>
+
+        <a class="lien_fiche_perso" href="../fiches/arts-visuels.html?id=e0021&titre=Alfred_Pellan">
+            <picture class="carte_perso11">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0021/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0021/portrait_600.jpg">
+                <img class="img_carte_perso11 img" src="../images/fiche_perso/e0021/portrait_600.jpg"
+                     alt="Une image de Alfred Pellan">
+            </picture>
+            Alfred Pellan</a>
+
+        <a class="lien_fiche_perso" href="../fiches/economie-et-politique.html?id=e0022&titre=Maurice_Pollack">
+            <picture class="carte_perso12">
+                <source media="(min-width:601px)"
+                        srcset="../images/fiche_perso/e0022/portrait_900.jpg">
+                <source media="(max-width:600px)"
+                        srcset="../images/fiche_perso/e0022/portrait_600.jpg">
+                <img class="img_carte_perso12 img" src="../images/fiche_perso/e0022/portrait_600.jpg"
+                     alt="Une image de Maurice Pollack">
+            </picture>
+            Maurice Pollack</a>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <nav class="nav_nav">
+        <ul class="nav__liste">
+            <li class="nav__itemAccueil">
+                <a class="nav__lien" href="../accueil/index.html">Accueil</a>
+            </li>
+            <li class="nav__itemCarte">
+                <a class="nav__lien" href="../carte/">Carte</a>
+            </li>
+            <li class="nav__itemEnquete">
+                <a class="nav__lien" href="../enquete/">Enquête</a>
+            </li>
+            <li class="nav__itemContact">
+                <a class="nav__lien" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="footer_paragraphe">
+        <div class="footer_grid">
+            <picture class="footer_medias">
+                <img class="footer_img" src="/images/footer/carte.png" alt="Carte de l'Adresse indiqué">
+            </picture>
+            <p class="footer_p">Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec.<br/> 418-654-9823
+            </p>
+        </div>
+        <p class="nous_joindre">Nous joindre</p>
+        <nav class="nav_medias">
+            <ul class="item_sociaux_ul">
+                <li class="item_sociaux">
+                    <a class="lien_sociaux facebook" href="facebook/"></a>
+                </li>
+                <li class="item_sociaux">
+                    <a class="lien_sociaux twitter" href="twitter/"></a>
+                </li>
+                <li class="item_sociaux">
+                    <a class="lien_sociaux youtube" href="youtube/"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="footer_remerciement">Merci à l’équipe des données ouvertes de la Ville de Québec qui a
+            rendu
+            disponibles le jeu de données « Épigraphes historiques »
+            sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et
+            servir
+            de prétexte au « Mystère sur Québec ».
+</footer>
+
+
+<p class="copyright">Une réalisation de Clodiane Charette, Maxime Graignon, Michel Kingma-Lord et
+    Benjamin
+    Brouillette. © Tous droits réservés. Travail scolaire réalisé en mars 2022.
+    Programme Techniques d’intégration multimédia.</p>
+</div>
+</footer>
+<script src="../js/epigraphes.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTCDvhlpyatxeG_IAbGnSKwJEv22YMtBA"></script>
+<script src="carte.js"></script>
+</body>
+</html>
